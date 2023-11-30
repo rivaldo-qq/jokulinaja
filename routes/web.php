@@ -4,6 +4,7 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\productController;
 use App\Http\Controllers\Admin\productGalleryController;
 use App\Http\Controllers\Admin\userController;
+use App\Http\Controllers\Admin\TransactionController;
 use App\Http\Controllers\DetailController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CartController;
@@ -99,6 +100,7 @@ Route::prefix('admin')
         Route::resource('user', userController::class);
         Route::resource('product', productController::class);
         Route::resource('product-gallery', productGalleryController::class);
+        Route::resource('transaction', TransactionController::class);
     });
 
 Auth::routes();
