@@ -20,7 +20,7 @@ class HomeController extends Controller
     {
 
         $categories = Category::take(6)->get();
-        $products = product::with('galleries')->take(8)->get();
+        $products = Product::with('galleries')->take(8)->get();
 
         return view ('pages.home',[
             'categories' => $categories,
