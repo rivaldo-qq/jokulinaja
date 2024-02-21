@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 use App\Models\Category;
-use App\Models\product;
+use App\Models\Product;
 
 class HomeController extends Controller
 {
