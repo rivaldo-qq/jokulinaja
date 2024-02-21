@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Category;
-use App\Models\product;
+use App\Models\Product;
 
 
 class CategoriesController extends Controller
